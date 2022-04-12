@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar";
 import Home from "./Pages/Home";
 import { Routes, Route } from "react-router-dom";
 import NotFound from "./Pages/NotFound";
+import './css/styles.css'
 
 const App = () => {
   return (
