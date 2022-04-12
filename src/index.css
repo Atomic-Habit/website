@@ -1,3 +1,80 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto!important;
+}
+
+.shadow-effect {
+    position: relative;
+    display: inline-block;
+}
+.shadow-effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    left: -20px;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #000;
+    background-clip: padding-box;
+}
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -3px;
+    border-radius: inherit;
+    background: linear-gradient(104.04deg, #FE75F0 0%, #491CFF 100%);
+}
+
+
+
+.custom-button .custom-text {
+    background: linear-gradient(104.04deg, #FE75F0 0%, #491CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: transform .2s ease-in-out;
+}
+
+.custom-button:hover .custom-text {
+    transform: scale(1.1);
+}
+
+.iPhoneBounce {
+    animation: iPhoneBounce 5s ease-in-out infinite alternate;
+    
+}
+
+@keyframes iPhoneBounce {
+    0% {
+        transform: rotate3d(0) translateY(0);
+    }
+    50% {
+        transform: translateY(-50px) rotate3d(-1, 1, -0.1, -20deg);
+    }
+    100% {
+        transform: rotate3d(0) translateY(0);
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
