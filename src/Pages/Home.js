@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import iphone1 from '../images/iPhones.png'
 import Fade from 'react-reveal/Fade'
-import Subscribe from '../component/Subscribe'
+//import Subscribe from '../component/Subscribe'
+
 const Home = () => {
 
   const [showSubscribe, setShowSubscribe] = useState(false)
@@ -36,7 +37,6 @@ const Home = () => {
         </Fade>
       </div>
 
-      {showSubscribe && <Subscribe />}
     </section>
   )
 }

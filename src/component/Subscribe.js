@@ -1,3 +1,5 @@
+/*
+
 import React, { useState, useEffect } from 'react'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
@@ -8,6 +10,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [error, setError] = useState(false)
+
+    const [currentState, setCurrentState] = useState("")
 
     const subscribe = (e) => {
         e.preventDefault()
@@ -25,11 +29,11 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     useEffect(() => {
         if (status === 'sending') {
-            setCurrentSate('sending')
+            setCurrentState('sending')
         } else if (status === 'success') {
-            setCurrentSate('success')
+            setCurrentState('success')
         } else if (status === 'error') {
-            setCurrentSate('error')
+            setCurrentState('error')
         }
     }, [status])
 
@@ -40,13 +44,14 @@ const CustomForm = ({ status, message, onValidated }) => {
         </section>
     )
 }
-
+*/
 
 const Subscribe = () => {
 
     const url = `https://jorisdelorme.us14.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
 
     return (
+        /*
         <MailchimpSubscribe
             url={url}
             render={({ subscribe, message, status }) => (
@@ -57,6 +62,8 @@ const Subscribe = () => {
                 />
             )}
         />
+        */
+       <h1>non</h1>
     )
 }
 

@@ -12,7 +12,6 @@ body {
 
 .shadow-effect {
     position: relative;
-    display: inline-block;
 }
 .shadow-effect::after {
     content: '';
