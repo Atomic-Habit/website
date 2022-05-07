@@ -10,42 +10,53 @@ body {
     margin: 0 auto!important;
 }
 
-.shadow-effect {
-    position: relative;
-}
-.shadow-effect::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 105%;
-    left: -20px;
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+.coming-soon {
+    background-image: url('./images/uiux.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.custom-button {
+
+
+.gradient-border {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: #000;
+    background: #fff;
     background-clip: padding-box;
 }
-.custom-button::before {
+.gradient-border::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
+    border-radius: inherit;
+    background: #fff;
+    border-radius: 13px;
+}
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     margin: -3px;
     border-radius: inherit;
+    border-radius: 15px;
     background: linear-gradient(104.04deg, #FE75F0 0%, #491CFF 100%);
 }
 
 
 
-.custom-button .custom-text {
+.custom-text {
     background: linear-gradient(104.04deg, #FE75F0 0%, #491CFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
