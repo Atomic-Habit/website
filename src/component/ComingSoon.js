@@ -3,7 +3,7 @@ import {Fade} from 'react-awesome-reveal'
 
 function ComingSoon() {
     return (
-        <div className='coming-soon max-h-[1000px] h-[100vh] w-full flex items-center justify-center flex-col z-10 leading-tight'>
+        <div id='comming-soon' className='coming-soon max-h-[1000px] h-[100vh] w-full flex items-center justify-center flex-col z-10 leading-tight'>
 
             <h2 className='text-center md:text-[50px] sm:text-[40px] text-[25px] font-bold leading-tight'>
                 <Fade direction='up'>

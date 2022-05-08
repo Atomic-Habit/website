@@ -18,7 +18,17 @@ body {
     background-size: cover;
 }
 
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-gap: 100px;
+}
 
+@media screen and (max-width: 650px) {
+    .custom-grid {
+        display: block;
+    }
+}
 
 .gradient-border {
     display: flex;
@@ -62,8 +72,32 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    transition: transform .2s ease-in-out;
 }
+
+.custom-text-learn {
+    background: linear-gradient(104.04deg, rgba(117, 196, 254, 1) 0%, #491CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.custom-text-stat {
+    background: linear-gradient(104.04deg, rgba(254, 117, 117, 1) 0%, #491CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.custom-text-more {
+    background: linear-gradient(104.04deg, rgba(117, 254, 131, 1) 0%, #491CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 
 .custom-button:hover .custom-text {
     transform: scale(1.1);

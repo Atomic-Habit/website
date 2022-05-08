@@ -4,6 +4,8 @@ import {Fade} from 'react-awesome-reveal'
 import Fade2 from 'react-reveal/Fade'
 import ComingSoon from '../component/ComingSoon'
 import Price from '../component/Price'
+import About from '../component/About'
+import Footer from '../component/Footer'
 //import Subscribe from '../component/Subscribe'
 
 const Home = () => {
@@ -40,7 +42,10 @@ const Home = () => {
         </div>
       </section>
       <ComingSoon />
-      <Price />
+      <div className="bg-[#fff]">
+        <About />
+        <Price />
+      </div>
     </>
 
   )

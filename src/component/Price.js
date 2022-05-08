@@ -34,7 +34,7 @@ const PriceCard = ({price, trialType, info, best=false}) => {
 
 const Price = () =>{
   return (
-    <section className='bg-[#fff] md:pr-10 pr-0 lg:max-h-[1000px] max-h-[700px] flex w-full h-[100vh] text-[#000] items-center justify-center'>
+    <section id='price' className='md:pr-10 pr-0 lg:max-h-[1000px] max-h-[700px] flex w-full h-[100vh] text-[#000] items-center justify-center'>
 
         <div className="md:block hidden px-20">
             <Fade direction='left'>
