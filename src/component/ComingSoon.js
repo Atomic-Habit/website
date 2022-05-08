@@ -3,17 +3,14 @@ import {Fade} from 'react-awesome-reveal'
 
 function ComingSoon() {
     return (
-        <div className='coming-soon max-h-[1000px] h-[100vh] w-full flex items-center justify-center flex-col z-10'>
+        <div className='coming-soon max-h-[1000px] h-[100vh] w-full flex items-center justify-center flex-col z-10 leading-tight'>
 
             <h2 className='text-center md:text-[50px] sm:text-[40px] text-[25px] font-bold leading-tight'>
                 <Fade direction='up'>
-                    <span className='inline-block px-10 pb-4'>
+                    <span className='inline-block px-10 linew'>
                         Bientôt  l’heure de prendre de bonnes habitudes !
                     </span>
-                </Fade >
-                < br />
-                <Fade  direction='up'>
-                    <span className='text-[#BC9CFF] inline-block'>En juin dans l’App store.</span>
+                    <span className='text-[#BC9CFF] inline-block mt-4'>En juin dans l’App store.</span>
                 </Fade>
 
             </h2>

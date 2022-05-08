@@ -1,6 +1,19 @@
 import React from 'react'
 import iphone from '../images/iphone.png'
-import {Fade} from 'react-awesome-reveal'
+import {Fade,Reveal} from 'react-awesome-reveal'
+import { keyframes } from "@emotion/react";
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 const PriceCard = ({price, trialType, info, best=false}) => {
     return (
@@ -34,9 +47,9 @@ const Price = () =>{
             <h2 className='font-black lg:text-[50px] sm:text-[30px] text-[25px]'>Prix des abonnements</h2>
 
             </Fade>
-            <Fade direction='up'>
+            <Reveal keyframes={customAnimation} >
             <p className='md:pr-20 pr-0 sm:text-left text-center sm:text-[20px] text-[12px]'>Psssst : une remise de 20 % si vous rejoignez le projet !</p>
-            </Fade>
+            </Reveal>
         <div className="">
             {
                 [
@@ -47,9 +60,9 @@ const Price = () =>{
                     })
             }
         </div>
-        <Fade direction='up'>
+        <Reveal keyframes={customAnimation}>
         <p className='sm:text-[20px] text-[15px] sm:text-left text-center md:pr-10 pr-0'>Bénéficiez de <b>7 jours d’essais gratuit</b> avec un abonnement annuel !</p>
-        </Fade>
+        </Reveal>
         </div>
     </section>
   )

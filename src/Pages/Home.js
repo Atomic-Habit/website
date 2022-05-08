@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import iphone1 from '../images/iPhones.png'
 import {Fade} from 'react-awesome-reveal'
+import Fade2 from 'react-reveal/Fade'
 import ComingSoon from '../component/ComingSoon'
 import Price from '../component/Price'
 //import Subscribe from '../component/Subscribe'
@@ -33,9 +34,9 @@ const Home = () => {
         </div>
 
         <div className="flex-3/4 lg:max-w-full md:max-w-[350px] sm:max-w-[300px] md:mt-40 max-w-[250px] md:pt-0 pt-10">
-          <Fade direction='up'>
+          <Fade2 bottom >
             <img className='lg:max-w-[400px] m-auto' src={iphone1} alt="iphone1" />
-          </Fade>
+          </Fade2>
         </div>
       </section>
       <ComingSoon />
