@@ -1,23 +1,21 @@
 import React, { useState } from 'react'
-import iphone1 from '../images/iPhones.png'
+import iphone1 from '../images/iphones.webp'
 import {Fade} from 'react-awesome-reveal'
 import Fade2 from 'react-reveal/Fade'
 import ComingSoon from '../component/ComingSoon'
 import Price from '../component/Price'
 import About from '../component/About'
-
-//import Subscribe from '../component/Subscribe'
-
-const Home = () => {
-
-  const [showSubscribe, setShowSubscribe] = useState(false)
+import CustomFade from '../component/CustomFade'
+import Subscribe from '../component/Subscribe'
+import scroll from '../images/scroll.svg'
+const Home = ({close, showSubscribe}) => {
 
   return (
     <>
-      <section className='w-full flex md:flex-row flex-col h-[100vh] max-h-[1000px] items-center sm:justify-center justify-center md:pt-0 pt-40 mb-20 lg:px-40 md:px-10 sm:px-20'>
-
+      <section id='home' className='w-full flex md:flex-row flex-col h-[100vh] max-h-[1000px] items-center sm:justify-center justify-center md:pt-0 pt-40 mb-20 lg:px-40 md:px-10 sm:px-20'>
+        {showSubscribe && <Subscribe closeHandler={close} />}
         <div className="md:flex-1 flex flex-col md:items-start items-center justify-center w-full">
-          <Fade cascade direction='up'>
+          <CustomFade>
             <h1 className="md:text-[35px] sm:text-[40px] text-[30px] md:text-left text-center leading-none font-bold font-black ">
               <span className='inline-block'>
                 Vous voulez devenir<br />
@@ -25,10 +23,10 @@ const Home = () => {
               </span>
               <span className='custom-text inline-block'>Laissez nous vous aider.</span>
             </h1>
-          </Fade>
+          </CustomFade>
           <Fade direction='up'>
             <div className="">
-              <div onClick={() => setShowSubscribe(!showSubscribe)} className=" bg-[#ffffff] mt-10 px-10 py-3 md:rounded-[10px] rounded-[10px] cursor-pointer">
+              <div onClick={() => close()} className=" bg-[#ffffff] mt-10 px-10 py-3 md:rounded-[10px] rounded-[10px] cursor-pointer">
                 <div className="custom-text font-bold md:text-[17px] text-[15px]">Rejoindre le lancement</div>
               </div>
             </div>
@@ -40,11 +38,13 @@ const Home = () => {
             <img className='lg:max-w-[400px] m-auto' src={iphone1} alt="iphone1" />
           </Fade2>
         </div>
+
       </section>
-      <ComingSoon />
+      <img className="absolute scroll-indicator sm:bottom-[5%] bottom-[2%] left-[50%] -translate-y-1/2" src={scroll} alt="sroll indicator" />
+      <ComingSoon handler={close} />
       <div className="bg-[#fff]">
         <About />
-        <Price />
+        <Price handlClose={close} />
       </div>
     </>
 

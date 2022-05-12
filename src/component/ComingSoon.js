@@ -1,7 +1,7 @@
 import React from 'react'
 import {Fade} from 'react-awesome-reveal'
 
-function ComingSoon() {
+function ComingSoon({handler}) {
     return (
         <div id='comming-soon' className='coming-soon max-h-[1000px] h-[100vh] w-full flex items-center justify-center flex-col z-10 leading-tight'>
 
@@ -15,7 +15,7 @@ function ComingSoon() {
 
             </h2>
             <Fade  direction='up'>
-                <p className='sm:text-[20px] text-[12px] pt-6 md:w-[600px] sm:w-[400px] md:max-w-[4000px] max-w-[400px] sm:px-0 px-10 text-center leading-tight'>En attendant vous pouvez soutenir le projet en nous rejoignant sur Instagram ou en rejoignant le projet.</p>
+                <p className='sm:text-[20px] text-[12px] pt-6 md:w-[600px] sm:w-[400px] md:max-w-[4000px] max-w-[400px] sm:px-0 px-10 text-center leading-tight'>En attendant vous pouvez soutenir le projet en nous rejoignant sur <a target="_blank" href='https://www.instagram.com/atomichabits.app' className='underline'>Instagram</a> ou en <span onClick={() => handler()} className='underline cursor-pointer'>rejoignant le projet.</span></p>
             </Fade>
         </div>
     )

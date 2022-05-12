@@ -1,23 +1,12 @@
 import React from 'react'
-import iphone from '../images/iphone.png'
-import {Fade,Reveal} from 'react-awesome-reveal'
-import { keyframes } from "@emotion/react";
+import iphone from '../images/iphone.webp'
+import {Fade} from 'react-awesome-reveal'
+import CustomFade from './CustomFade';
 
-const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`;
 
 const PriceCard = ({price, trialType, info, best=false}) => {
     return (
-        <Fade direction='up'>
+        <CustomFade>
         <div className={`text-[#000] relative ${best ? "gradient-border" : "border-black border-[3px] rounded-[15px]"} my-10  lg:px-20 md:px-10 sm:px-20 px-[30px] py-[40px] w-fit`}>
 
             <div className="absolute z-10 left-[40px] -top-[15%] bg-[#fff] px-2 ">
@@ -28,11 +17,11 @@ const PriceCard = ({price, trialType, info, best=false}) => {
                 <span className='font-bold'>{price}</span><span className='opacity-[0.5]'>{"  " + info}</span>
             </div>
         </div>
-        </Fade>
+        </CustomFade>
     )
 }
 
-const Price = () =>{
+const Price = ({handlClose}) =>{
   return (
     <section id='price' className='md:pr-10 pr-0 lg:max-h-[1000px] max-h-[700px] flex w-full h-[100vh] text-[#000] items-center justify-center'>
 
@@ -43,13 +32,14 @@ const Price = () =>{
         </div>
 
         <div className="md:block flex flex-col justify-center items-center sm:px-0 px-10 ">
-            <Fade  direction='up'>
+            <CustomFade>
             <h2 className='font-black lg:text-[50px] sm:text-[30px] text-[25px]'>Prix des abonnements</h2>
 
-            </Fade>
-            <Reveal keyframes={customAnimation} >
-            <p className='md:pr-20 pr-0 sm:text-left text-center sm:text-[20px] text-[12px]'>Psssst : une remise de 20 % si vous rejoignez le projet !</p>
-            </Reveal>
+            </CustomFade>
+            <CustomFade >
+                <p className='md:pr-20 pr-0 sm:text-left text-center sm:text-[20px] text-[12px]'>Psssst : une remise de 20 % si vous <span  onClick={() => handlClose()} className='underline z-10 cursor-pointer'>rejoignez le projet !</span></p>
+            </CustomFade>
+            
         <div className="">
             {
                 [
@@ -60,9 +50,9 @@ const Price = () =>{
                     })
             }
         </div>
-        <Reveal keyframes={customAnimation}>
+        <CustomFade>
         <p className='sm:text-[20px] text-[15px] sm:text-left text-center md:pr-10 pr-0'>Bénéficiez de <b>7 jours d’essais gratuit</b> avec un abonnement annuel !</p>
-        </Reveal>
+        </CustomFade>
         </div>
     </section>
   )
