@@ -38,7 +38,6 @@ const CustomFade = (props) => {
     }
 
     useEffect(() => {
-
         if (elm.current.getBoundingClientRect().top + elm.current.getBoundingClientRect().height < window.screenY) {
             setDirection('down')
         } else {
@@ -46,7 +45,7 @@ const CustomFade = (props) => {
         }
 
         console.log(direction)
-    }, [isObserve])
+    }, [isObserve, direction, elm])
     
     return (
         <div ref={elm}>
