@@ -9,8 +9,7 @@ const Navbar = ({close}) => {
         <img className='w-[40px]' src={logo} alt="logo" />
         <ul className='sm:flex hidden'>
           <li className='px-5'><a href="#home">Acceuil</a></li>
-          <li className='px-5'><a href="#comming-soon">Comming soon</a></li>
-          <li className='px-5'><a href="#about">Application</a></li>
+          <li className='px-5'><a href="#about">A propos</a></li>
           <li className='px-5'><a href="#price">Prix</a></li>
           <li className='px-5'><a href="#contact">Contact</a></li>
         </ul>
