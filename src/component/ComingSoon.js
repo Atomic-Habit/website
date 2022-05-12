@@ -15,7 +15,7 @@ function ComingSoon({handler}) {
 
             </h2>
             <Fade  direction='up'>
-                <p className='sm:text-[20px] text-[12px] pt-6 md:w-[600px] sm:w-[400px] md:max-w-[4000px] max-w-[400px] sm:px-0 px-10 text-center leading-tight'>En attendant vous pouvez soutenir le projet en nous rejoignant sur <a target="_blank" href='https://www.instagram.com/atomichabits.app' className='underline'>Instagram</a> ou en <span onClick={() => handler()} className='underline cursor-pointer'>rejoignant le projet.</span></p>
+                <p className='sm:text-[20px] text-[12px] pt-6 md:w-[600px] sm:w-[400px] md:max-w-[4000px] max-w-[400px] sm:px-0 px-10 text-center leading-tight'>En attendant vous pouvez soutenir le projet en nous rejoignant sur <a target="_blank" href='https://www.instagram.com/atomichabits.app' rel="noreferrer" className='underline'>Instagram</a> ou en <span onClick={() => handler()} className='underline cursor-pointer'>rejoignant le projet.</span></p>
             </Fade>
         </div>
     )

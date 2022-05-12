@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import iphone1 from '../images/iphones.webp'
 import {Fade} from 'react-awesome-reveal'
 import Fade2 from 'react-reveal/Fade'
