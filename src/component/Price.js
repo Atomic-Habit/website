@@ -2,7 +2,7 @@ import React from 'react'
 import iphone from '../images/iphone.webp'
 import {Fade} from 'react-awesome-reveal'
 import CustomFade from './CustomFade';
-
+import Fade2 from 'react-reveal/Fade';
 
 const PriceCard = ({price, trialType, info, best=false}) => {
     return (
@@ -36,10 +36,20 @@ const Price = ({handlClose}) =>{
             <h2 className='font-black lg:text-[50px] sm:text-[30px] text-[25px]'>Prix des abonnements</h2>
 
             </CustomFade>
+
+            <div className="sm:block hidden">
             <CustomFade >
                 <p className='md:pr-20 pr-0 sm:text-left text-center sm:text-[20px] text-[12px]'>Psssst : une remise de 20 % si vous <span  onClick={() => handlClose()} className='underline z-10 cursor-pointer'>rejoignez le projet !</span></p>
             </CustomFade>
+            </div>
+
+            <div className="sm:hidden">
+            <Fade2 bottom>
+                <p className='md:pr-20 pr-0 sm:text-left text-center sm:text-[20px] text-[12px]'>Psssst : une remise de 20 % si vous <span  onClick={() => handlClose()} className='underline z-10 cursor-pointer'>rejoignez le projet !</span></p>
+            </Fade2>
             
+            </div>
+
         <div className="">
             {
                 [

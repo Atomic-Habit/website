@@ -14,6 +14,7 @@ const Home = ({close, showSubscribe}) => {
       <section id='home' className='w-full flex md:flex-row flex-col h-[100vh] max-h-[1000px] items-center sm:justify-center justify-center md:pt-0 pt-40 mb-20 lg:px-40 md:px-10 sm:px-20'>
         {showSubscribe && <Subscribe closeHandler={close} />}
         <div className="md:flex-1 flex flex-col md:items-start items-center justify-center w-full">
+          <div className="sm:block hidden">
           <CustomFade>
             <h1 className="md:text-[35px] sm:text-[40px] text-[30px] md:text-left text-center leading-none font-bold font-black ">
               <span className='inline-block'>
@@ -23,6 +24,18 @@ const Home = ({close, showSubscribe}) => {
               <span className='custom-text inline-block'>Laissez nous vous aider.</span>
             </h1>
           </CustomFade>
+          </div>
+          <div className="sm:hidden">
+          <Fade2 bottom>
+            <h1 className="md:text-[35px] sm:text-[40px] text-[30px] md:text-left text-center leading-none font-bold font-black ">
+              <span className='inline-block'>
+                Vous voulez devenir<br />
+                meilleur que la veille ?<br />
+              </span>
+              <span className='custom-text inline-block'>Laissez nous vous aider.</span>
+            </h1>
+          </Fade2>
+          </div>
           <Fade direction='up'>
             <div className="">
               <div onClick={() => close()} className=" bg-[#ffffff] mt-10 px-10 py-3 md:rounded-[10px] rounded-[10px] cursor-pointer">
