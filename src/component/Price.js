@@ -53,15 +53,15 @@ const Price = ({handlClose}) =>{
         <div className="">
             {
                 [
-                    {price: '2,50 € / mois', info: " soit 47,88 € / ans", trialType: 'Abonnement mensuel', best: false},
-                    {price: '20,99 € / ans',  info: " économiser 30%", trialType: 'Abonnement annuel', best: true}
+                    {price: '2,50 € / mois', info: " soit 47,88 € / an", trialType: 'Abonnement mensuel', best: false},
+                    {price: '20,99 € / an',  info: " économiser 30%", trialType: 'Abonnement annuel', best: true}
                 ].map((trial, index) => {
                     return <PriceCard key={index} price={trial.price} info={trial.info} trialType={trial.trialType} best={trial.best} />
                     })
             }
         </div>
         <CustomFade>
-        <p className='sm:text-[20px] text-[15px] sm:text-left text-center md:pr-10 pr-0'>Bénéficiez de <b>7 jours d’essais gratuit</b> avec un abonnement annuel !</p>
+        <p className='sm:text-[20px] text-[15px] sm:text-left text-center md:pr-10 pr-0'>Bénéficiez de <b>7 jours d’essai gratuit</b> avec un abonnement annuel !</p>
         </CustomFade>
         </div>
     </section>

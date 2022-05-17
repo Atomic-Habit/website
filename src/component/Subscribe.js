@@ -64,7 +64,7 @@ const CustomForm = ({ status, message, onValidated, closeHandler }) => {
                 
                 <Fade  cascade direction='up' delay={500}>
                     <h2 className='max-w-[360px] custom-text sm:text-[40px] text-[30px] font-bold leading-tight mb-5'>Rejoignez une aventure atomic !</h2>
-                    <p className='max-w-[360px] sm:text-[20px] text-[15px] mb-5'>Restez informez sur la sortie de l’application et bénéficier d’offre exclusive.</p>
+                    <p className='max-w-[360px] sm:text-[20px] text-[15px] mb-5'>Restez informé sur la sortie de l’application et bénéficiez d’offres exclusives.</p>
                 </Fade>
                 <p className='text-[#F65555] mb-5'>{error}</p>
                 <div className="flex sm:flex-row flex-col items-center w-full sm:items-end">
@@ -78,7 +78,7 @@ const CustomForm = ({ status, message, onValidated, closeHandler }) => {
                         </div>
                         <div className="inputbox-content w-full">
                             <input id="input2 text-xl" type="name" name="name" required value={email} onChange={e => setEmail(e.target.value)} />
-                            <label htmlFor="input2" className='sm:text-xl'>Adress mail...</label>
+                            <label htmlFor="input2" className='sm:text-xl'>Adresse mail...</label>
                             <span className="underline"></span>
                         </div>
                         </Fade>

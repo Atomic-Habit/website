@@ -10,10 +10,10 @@ function About() {
   return (
     <section id='about' className='sm:px-20 px-10 text-black pt-40 lg:mb-40 sm:mb-20'>
         <CustomFade>
-        <p className='ml-auto mb-20 max-w-[600px]'>Nous cherchons constamment à progresser, avec des habitudes quotidiennes qui vont nous faire devenir meilleur que la veille. Mais crée une nouvelle habitude c’est difficile, autant quand trouver une bonne qui nous fera aller de l’avant.</p>
+        <p className='ml-auto mb-20 max-w-[600px]'>Nous cherchons constamment à progresser, avec des habitudes quotidiennes qui vont nous faire devenir meilleur que la veille. Mais créer une nouvelle habitude c’est difficile, autant quand trouver une bonne qui nous fera aller de l’avant.</p>
         </CustomFade>
     <CustomFade>
-    <h2 className='max-w-[950px] mb-20 font-bold text-center sm:text-left sm:text-[50px] text-[30px]'><span className='custom-text'>Atomic Habits </span>sera là de la création de votre habitude jusqu’à l’encrage de celle-ci dans votre routine et plus loin encore...</h2>
+    <h2 className='max-w-[950px] mb-20 font-bold text-center sm:text-left sm:text-[50px] text-[30px]'><span className='custom-text'>Atomic Habits </span>sera là de la création de votre habitude jusqu’à l'ancrage de celle-ci dans votre routine et plus loin encore...</h2>
     </CustomFade>
 
     <div className="custom-grid">
@@ -43,7 +43,7 @@ function About() {
                 <img src={statistics} alt="statistics icone" className='sm:h-[50px] h-[35px] mr-5'/>
                 <h3 className='custom-text-stat font-bold sm:text-[50px] text-[35px]'>Statistiques</h3>
             </div>
-            <p className='sm:text-[25px] text-[20px]'>Des statistiques en temps réel vous seront proposés pour voir l’entièreté de la progression de vos habitudes ou d’une habitude en particulier.</p>
+            <p className='sm:text-[25px] text-[20px]'>Des statistiques en temps réel vous seront proposées pour voir l’entièreté de la progression de vos habitudes ou d’une habitude en particulier.</p>
         </div>
         </CustomFade>
         <CustomFade>
@@ -53,7 +53,7 @@ function About() {
                 <img src={more} alt="more icone" className='sm:h-[50px] h-[35px] mr-5' />
                 <h3 className='custom-text-more font-bold sm:text-[50px] text-[35px] whitespace-nowrap'>Et bien plus...</h3>
             </div>
-            <p className='sm:text-[25px] text-[20px]'>Vous pourrez partagez des habitudes avec vos amis, utiliser vos donner de santé pour automatiser le suivies...</p>
+            <p className='sm:text-[25px] text-[20px]'>Vous pourrez partagez des habitudes avec vos amis, utiliser vos données de santé pour automatiser le suivi...</p>
         </div>
         </CustomFade>
 

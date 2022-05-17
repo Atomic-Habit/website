@@ -10,7 +10,7 @@ const Footer = () => {
         </Fade>
 
         <Fade>
-        <p className='mt-20 sm:text-[25px] text-[15px]'>Suivez nous sur les différent réseaux.</p>
+        <p className='mt-20 sm:text-[25px] text-[15px]'>Suivez-nous sur les différents réseaux.</p>
         </Fade>
         <Fade cascade direction='up' damping={0.2}>
         <ul className='flex sm:text-[25px] text-[20px]'>
