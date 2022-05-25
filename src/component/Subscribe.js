@@ -72,12 +72,12 @@ const CustomForm = ({ status, message, onValidated, closeHandler }) => {
                     <Fade cascade direction='up' delay={1200}>
 
                         <div className="inputbox-content pb-10">
-                            <input id="input1" type="name" name="name" required value={firstName} onChange={e => setFirstName(e.target.value)} />
+                            <input autoComplete="off" autoCorrect="off" autoCapitalize="off" id="input1" type="name" name="name" required value={firstName} onChange={e => setFirstName(e.target.value)} />
                             <label htmlFor="input1" className='sm:text-xl'>Votre prénom...</label>
                             <span className="underline"></span>
                         </div>
                         <div className="inputbox-content w-full">
-                            <input id="input2 text-xl" type="name" name="name" required value={email} onChange={e => setEmail(e.target.value)} />
+                            <input autoComplete="off" autoCorrect="off" autoCapitalize="off" id="input2 text-xl" type="name" name="name" required value={email} onChange={e => setEmail(e.target.value)} />
                             <label htmlFor="input2" className='sm:text-xl'>Adresse mail...</label>
                             <span className="underline"></span>
                         </div>
