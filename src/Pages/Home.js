@@ -7,6 +7,7 @@ import About from '../component/About'
 import CustomFade from '../component/CustomFade'
 import Subscribe from '../component/Subscribe'
 import scroll from '../images/scroll.svg'
+import FAQ from '../component/FAQ'
 const Home = ({close, showSubscribe}) => {
 
   return (
@@ -17,9 +18,9 @@ const Home = ({close, showSubscribe}) => {
           <div className="sm:block hidden">
           <CustomFade>
             <h1 className="md:text-[35px] sm:text-[40px] text-[30px] md:text-left text-center leading-none font-bold font-black ">
-              <span className='inline-block'>
-                Vous voulez devenir<br />
-                meilleur que la veille ?<br />
+              <span className='inline-block pb-2'>
+              Et si de bonnes habitudes vous<br />
+              rendaient meilleur qu’hier ?<br />
               </span>
               <span className='custom-text inline-block'>Laissez nous vous aider.</span>
             </h1>
@@ -57,6 +58,7 @@ const Home = ({close, showSubscribe}) => {
       <div className="bg-[#fff]">
         <About />
         <Price handlClose={close} />
+        <FAQ />
       </div>
     </>
 
