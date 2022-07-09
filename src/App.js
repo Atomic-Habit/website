@@ -9,7 +9,6 @@ import './css/styles.css'
 const App = () => {
   const [showSubscribe, setShowSubscribe] = useState(false)
   const close = () => {
-    console.log('e');
     setShowSubscribe(showSubscribe => !showSubscribe)
   }
   return (

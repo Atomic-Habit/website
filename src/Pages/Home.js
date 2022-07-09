@@ -1,6 +1,5 @@
 import iphone1 from '../images/iphones.webp'
 import {Fade} from 'react-awesome-reveal'
-import Fade2 from 'react-reveal/Fade'
 import ComingSoon from '../component/ComingSoon'
 import Price from '../component/Price'
 import About from '../component/About'
@@ -27,7 +26,7 @@ const Home = ({close, showSubscribe}) => {
           </CustomFade>
           </div>
           <div className="sm:hidden">
-          <Fade2 bottom>
+          <Fade direction='up'>
             <h1 className="md:text-[35px] sm:text-[40px] text-[30px] md:text-left text-center leading-none font-bold font-black ">
               <span className='inline-block'>
                 Vous voulez devenir<br />
@@ -35,7 +34,7 @@ const Home = ({close, showSubscribe}) => {
               </span>
               <span className='custom-text inline-block'>Laissez nous vous aider.</span>
             </h1>
-          </Fade2>
+          </Fade>
           </div>
           <Fade direction='up'>
             <div className="">
@@ -47,9 +46,9 @@ const Home = ({close, showSubscribe}) => {
         </div>
 
         <div className="flex-3/4 lg:max-w-full md:max-w-[350px] sm:max-w-[300px] md:mt-40 max-w-[250px] md:pt-0 pt-10">
-          <Fade2 bottom >
+          <Fade bottom >
             <img className='lg:max-w-[400px] m-auto' src={iphone1} alt="iphone1" />
-          </Fade2>
+          </Fade>
         </div>
 
       </section>

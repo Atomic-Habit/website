@@ -44,7 +44,6 @@ const CustomFade = (props) => {
             setDirection('up')
         }
 
-        console.log(direction)
     }, [isObserve, direction, elm])
     
     return (

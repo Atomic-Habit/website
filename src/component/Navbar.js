@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from '../images/logo.webp'
-import Fade from 'react-reveal/Fade'
+import {Fade} from 'react-awesome-reveal'
 
 const Navbar = ({close}) => {
   return (
-    <Fade top>
+    <Fade direction='up'>
       <div className="flex h-[70px] backdrop-blur-sm fixed bg-[rgba(0,0,0,0.2)] w-full z-10 sm:px-20 px-10 items-center justify-between">
         <img className='w-[40px]' src={logo} alt="logo" />
         <ul className='sm:flex hidden'>

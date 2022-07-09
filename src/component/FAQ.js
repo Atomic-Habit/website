@@ -29,7 +29,7 @@ function FAQ() {
                     <p className='max-w-[1100] md:text-[25px] text-[20px]'>Tout d’abord, il faut prendre le temps de définir des objectifs faciles à atteindre correspondant à vos envies et besoins. Evitez d’écrire une longue liste de résolutions à prendre. La meilleure chose à faire est de commencer par des habitudes que vous avez le plus envie de voir devenir naturelles. Celles-ci seront source de succès et votre récompense sera le changement que vous sentirez dans votre quotidien.
                         <br />
                         <br />
-                        Atomic Habits une application, ou un tracker si vous préférez, qui vous aide à :
+                        Atomic Habits une application, ou un tracker si vous préférez, qui vous aide à :</p>
                         <ul className=''>
                             <li>transformer des routines en bonnes habitudes</li>
                             <li>relever vos défis</li>
@@ -39,7 +39,7 @@ function FAQ() {
                             <li>ancrer pour longtemps les rituels et habitudes que vous aurez acquis</li>
                         </ul>
                         <br />
-                        La notion d’effort est très relative à chacun. Oubliez-la. Pensez positif et voyez votre habitude en devenir comme une chose naturelle qui vous est bénéfique. Boostez votre motivation à force de succès, avancez pas à pas et accomplissez-vous tout simplement.
+                        <p>La notion d’effort est très relative à chacun. Oubliez-la. Pensez positif et voyez votre habitude en devenir comme une chose naturelle qui vous est bénéfique. Boostez votre motivation à force de succès, avancez pas à pas et accomplissez-vous tout simplement.
                     </p>
                 </section>
 
@@ -48,7 +48,7 @@ function FAQ() {
                     <p className='max-w-[1100] md:text-[25px] text-[20px]'>Il existe une quantité de bonnes habitudes que nous pouvons prendre. Atomic Habits a configuré pour vous des habitudes courantes que beaucoup d’entre nous cherchons à développer. Ces habitudes ont trait à notre activité physique, à notre alimentation, à notre sommeil, à notre capacité à nous surpasser.
                         <br />
                         <br />
-                        Vous trouverez par exemple une aide pour :
+                        Vous trouverez par exemple une aide pour :</p>
                         <ul className=''>
                             <li>bien démarrer votre journée</li>
                             <li>gagner en productivité</li>
@@ -57,7 +57,7 @@ function FAQ() {
                             <li>dormir du sommeil du juste, lien vers définition sommeil du juste</li>
                         </ul>
                         <br />
-                        Et comme nous sommes tous différents les uns des autres, l’application Atomic Habits vous permet de configurer votre propres nouvelles habitudes. Devenir son propre professeur, n’est-ce pas chose formidable ? Suivez votre feeling ou votre instinct et ajouter une routine à votre vie qui emmènera jusqu’au sommet de votre montage intérieure.
+                        <p>Et comme nous sommes tous différents les uns des autres, l’application Atomic Habits vous permet de configurer votre propres nouvelles habitudes. Devenir son propre professeur, n’est-ce pas chose formidable ? Suivez votre feeling ou votre instinct et ajouter une routine à votre vie qui emmènera jusqu’au sommet de votre montage intérieure.
                     </p>
                 </section>
             </article>
