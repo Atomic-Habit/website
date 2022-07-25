@@ -30,7 +30,8 @@ function FAQ() {
                         <br />
                         <br />
                         Atomic Habits une application, ou un tracker si vous préférez, qui vous aide à :</p>
-                        <ul className=''>
+                        <br />
+                        <ul className='list-disc pl-10 max-w-[1100] md:text-[25px] text-[20px]'>
                             <li>transformer des routines en bonnes habitudes</li>
                             <li>relever vos défis</li>
                             <li>progresser chaque jour en toute simplicité grâce à des rappels programmés</li>
@@ -39,7 +40,7 @@ function FAQ() {
                             <li>ancrer pour longtemps les rituels et habitudes que vous aurez acquis</li>
                         </ul>
                         <br />
-                        <p>La notion d’effort est très relative à chacun. Oubliez-la. Pensez positif et voyez votre habitude en devenir comme une chose naturelle qui vous est bénéfique. Boostez votre motivation à force de succès, avancez pas à pas et accomplissez-vous tout simplement.
+                        <p className='max-w-[1100] md:text-[25px] text-[20px]'>La notion d’effort est très relative à chacun. Oubliez-la. Pensez positif et voyez votre habitude en devenir comme une chose naturelle qui vous est bénéfique. Boostez votre motivation à force de succès, avancez pas à pas et accomplissez-vous tout simplement.
                     </p>
                 </section>
 
@@ -49,15 +50,16 @@ function FAQ() {
                         <br />
                         <br />
                         Vous trouverez par exemple une aide pour :</p>
-                        <ul className=''>
-                            <li>bien démarrer votre journée</li>
-                            <li>gagner en productivité</li>
-                            <li>retrouver la forme</li>
-                            <li>développer une zen attitude</li>
-                            <li>dormir du sommeil du juste, lien vers définition sommeil du juste</li>
+                        <br />
+                        <ul className='list-disc pl-10 max-w-[1100] md:text-[25px] text-[20px]'>
+                            <li>Bien démarrer votre journée</li>
+                            <li>Gagner en productivité</li>
+                            <li>Retrouver la forme</li>
+                            <li>Développer une zen attitude</li>
+                            <li>Dormir du sommeil du juste, lien vers définition sommeil du juste</li>
                         </ul>
                         <br />
-                        <p>Et comme nous sommes tous différents les uns des autres, l’application Atomic Habits vous permet de configurer votre propres nouvelles habitudes. Devenir son propre professeur, n’est-ce pas chose formidable ? Suivez votre feeling ou votre instinct et ajouter une routine à votre vie qui emmènera jusqu’au sommet de votre montage intérieure.
+                        <p className='max-w-[1100] md:text-[25px] text-[20px]'>Et comme nous sommes tous différents les uns des autres, l’application Atomic Habits vous permet de configurer votre propres nouvelles habitudes. Devenir son propre professeur, n’est-ce pas chose formidable ? Suivez votre feeling ou votre instinct et ajouter une routine à votre vie qui emmènera jusqu’au sommet de votre montage intérieure.
                     </p>
                 </section>
             </article>

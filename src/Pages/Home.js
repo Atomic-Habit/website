@@ -7,7 +7,10 @@ import CustomFade from '../component/CustomFade'
 import Subscribe from '../component/Subscribe'
 import scroll from '../images/scroll.svg'
 import FAQ from '../component/FAQ'
+
 const Home = ({close, showSubscribe}) => {
+
+  window.scrollTo(0,0)
 
   return (
     <>

@@ -2,7 +2,7 @@ import React from 'react'
 import {Fade} from 'react-awesome-reveal'
 const Footer = () => {
   return (
-    <footer id='contact'>
+    <footer id='contact' className='bg-[#000] text-[#fff]'>
       <div className="py-40 sm:px-20 flex items-center justify-center w-full flex-col">
         <Fade cascade direction='up' damping={0.2}>
         <p className='sm:text-[25px] text-[15px]'>Une question ? Une demande ? Contactez-nous !</p>

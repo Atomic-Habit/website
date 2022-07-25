@@ -1,4 +1,5 @@
-.inputbox {
+/******************** Custom Input ********************/
+.contact .inputbox {
   overflow: hidden;
   position: relative;
   padding: 15px 0 28px 0px;
@@ -6,7 +7,7 @@
   width: 245px;
 }
 
-.inputbox-title {
+.contact .inputbox-title {
   position: absolute;
   top: 15px;
   left: 0;
@@ -14,24 +15,24 @@
   height: 50px;
   color: #666;
   font-weight: bold;
-  line-height: 3px;
+  line-height: 30px;
 }
 
-.inputbox-content {
+.contact .inputbox-content {
   position: relative;
   width: 100%;
 }
 
-.inputbox-content label {
+.contact .inputbox-content label {
   display: block;
 }
 
-.inputbox-content input {
+.contact .inputbox-content input {
   width: 100%;
-  height: 30px;
+  height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 14px;
   border: 0;
   background: none;
@@ -41,11 +42,11 @@
   -webkit-appearance: none;
 }
 
-.inputbox-content input:focus ~ label, .inputbox-content input:valid ~ label {
-  font-size: 15px!important;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+.contact .inputbox-content input:focus ~ label, .contact .inputbox-content input:valid ~ label {
+  font-size: 15px;
+  color: #8A2732;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
   cursor: default;
 }
 
@@ -53,20 +54,20 @@
   width: 100%;
 }
 
-.inputbox-content label {
+.contact .inputbox-content label {
   position: absolute;
   top: 0;
   left: 0;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   color: #ccc;
   cursor: text;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
-  z-index: -10;
+  z-index: 10;
 }
 
-.inputbox-content .underline {
+.contact .inputbox-content .underline {
   content: '';
   display: block;
   position: absolute;
@@ -74,7 +75,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #8A2732;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -110,5 +111,87 @@ select:-webkit-autofill:focus {
   font-weight: 400;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+/******************** Articles ********************/
+.article-card .gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+#articles {
+  background-color: #fff;
+  color: #000;
+  padding: 150px 0;
+}
+
+.article {
+  background-color: #fff;
+  color: #000;
+}
+
+.article h1, .article h2, .article h3 {
+  margin-top: 2.37em;
+}
+
+.article h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.article h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.article h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.article p {
+  margin-top: 0.86em;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+}
+
+.article hr {
+  margin: 2.37em auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 550px) {
+  .article h1, .article h2, .article h3 {
+    margin-top: 2.07em;
+  }
+  .article h3 {
+    font-size: 18px;
+  }
+  .article p {
+    margin-top: 0.67em;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+  }
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skeletone {
+  min-width: 300px;
+}
+
+.articles-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

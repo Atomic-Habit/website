@@ -3,7 +3,9 @@ $dark-primary-color: #fff;
 $accent-color: #8A2732;
 $sub-yellow: #ffca00;
 
-.contact .inputbox{
+/******************** Custom Input ********************/
+
+.contact .inputbox {
   overflow: hidden;
   position: relative;
   padding:15px 0 28px 0px;
@@ -107,4 +109,88 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: #000;
     font-weight: 400;
     transition: background-color 5000s ease-in-out 0s;
+}
+
+/******************** Articles ********************/
+.article-card .gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+#articles {
+  background-color: #fff;
+  color: #000;
+  padding: 150px 0;
+}
+
+.article {
+  background-color: #fff;
+  color: #000;
+
+  h1, h2, h3 {
+    margin-top: 2.37em;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: 0.86em;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+  }
+
+  hr {
+    margin: 2.37em auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .article {
+  
+    h1, h2, h3 {
+      margin-top: 2.07em;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  
+    p {
+      margin-top: 0.67em;
+      font-size: 18px;
+      letter-spacing: 0.04em;
+      line-height: 28px;
+    }
+  }
+}
+
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skeletone {
+  min-width: 300px;
+}
+
+.articles-container {
+  align-items: stretch;
+  column-gap: 50px;
+  row-gap: 50px;
 }

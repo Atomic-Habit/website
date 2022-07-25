@@ -1,12 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  hydrate(  
+
+    <Router>
+      <App />
+    </Router>, 
+
+  rootElement);
+
+} else {
+  render(  
+
   <Router>
     <App />
   </Router>,
-  document.getElementById('root')
-);
+  
+  rootElement);
+}
